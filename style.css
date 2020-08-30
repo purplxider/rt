@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+/*기본색*/
+:root {
+    --main-color: #5D9AB2;
+    --accent-color: #BF6A7A;
+    --dark-color: #2B5566;
+}
+
+/*헤더*/
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/*헤더A: 사이트 이름*/
+.headA {
+    display: inline-block;
+    height: 70px;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #fff;
+    color: #000;
+}
+
+/*페이지 전체*/
+body {
+    margin: 0;
+    font-family: 'Alata', sans-serif;
+}
+
+/*메인배너*/
+.banner {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    min-height: 450px;
+    background-image: url(img/blackboard.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+/*메인배너 제목*/
+.banner h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 15vw;
+}
+
+/*메인배너 소개글*/
+.banner p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+}
+
+/*메인배너 링크*/
+.banner a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    border: solid 3px currentColor;
+    border-radius: 6px;
+    background-color: #facf4d;
+    color: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/*메인배너 커서 올릴 시*/
+.banner a:hover {
+    background-image: linear-gradient(
+    rgba(255,255,255,0.2),
+    rgba(255,255,255,0.2)
+    );
+}
+
+/*소개*/
+.introduction {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.introduction .container {
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+/*소개 텍스트*/
+.introduction .text {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 60px;
+}
+
+/*소개 제목*/
+.introduction h2{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: 'Alata', sans-serif;
+    font-size: 20px;
+}
+
+/*소개 내용*/
+.introduction p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.8;
+    opacity: 0.8;
+}
+
+/*소개 링크*/
+.introduction a {
+    color: #facf4d;
+    text-decoration: none;
+}
+
+.introduction a:hover {
+    text-decoration: underline;
+}
+
+/*소개 아이콘*/
+.introduction .icon {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 40px;
+    width: 2em;
+    line-height: 2em;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #ddd;
+    color: #fff;
+}
+
+
+
+@media (min-width:768px) {
+    .banner h1 {
+        font-size: 115px;
+    }
+    
+    .banner p {
+        font-size: 24px;
+    }
+}
